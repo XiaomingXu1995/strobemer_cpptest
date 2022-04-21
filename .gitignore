@@ -1,0 +1,12 @@
+
+benchmark_SIM-R-match-only/strobemer.o
+benchmark_SIM-R-match-only/random100k 
+benchmark_SIM-R-match-only/rmutation100k 
+benchmark_SIM-R-match-only/gen_kmer 
+benchmark_SIM-R-match-only/check_kmer
+benchmark_SIM-R-match-only/gen_minstrobe 
+benchmark_SIM-R-match-only/check_minstrobe 
+benchmark_SIM-R-match-only/gen_randstrobe 
+benchmark_SIM-R-match-only/check_randstrobe
+benchmark_SIM-R-match-only/*.fa
+benchmark_SIM-R-match-only/*.all

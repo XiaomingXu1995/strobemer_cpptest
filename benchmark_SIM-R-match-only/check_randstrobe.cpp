@@ -4,6 +4,7 @@
 #include <cassert>
 #include <set>
 #include "../strobemer.h"
+#include <math.h>
 int main(int argc , char **argv){
     srand(time(NULL));
     char nucs[4] = { 'A','T','G','C'};
@@ -37,6 +38,13 @@ int main(int argc , char **argv){
                 found++;
     }
     std::cout<<found<<std::endl;
+    int denom = markers.size() + number - found;
+		double matchRate = (double)found / (double)(markers.size());
+    double jaccard = (double)found / (double)denom;
+    double mashD = -1.0 / (double)30 * log(2.0 * jaccard / (1.0 + jaccard));
+    std::cout << "the matchRate is: " << matchRate << std::endl;
+    std::cout << "the jaccard is: " << jaccard << std::endl;
+    std::cout << "the mashD is: " << mashD << std::endl;
     delete []buff;
     return 0;
 }
